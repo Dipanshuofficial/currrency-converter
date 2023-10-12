@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter - Convert your currency </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@400;600&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav>
+        <div class="head">
+            <div class="logo">
+            </div>
+            <h1>CURRENCY CONVERTOR</h1>
+        </div>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Content -->
+    <div class="container">
+        <div class="istn">
+            <img src="./assets/illustration.svg" alt="illustration">
+        </div>
+        <!-- Output Table -->
+        <div class="output">
+            <h2>Converted</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <form action="/action.php" method="get">
+            <label for="currency">Choose from currency: </label>
+            <select name="currency">
+                <option value="INR">Bharat Rupees</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">EURO</option>
+            </select>
+            <label for="quantity">Choose quantity: </label>
+            <input type="number" name="quantity" min="1">
+            <label for="currency">Choose to currency: </label>
+            <select name="toCurrency">
+                <option value="INR">Bharat Rupees</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">EURO</option>
+            </select>
+            <button class="btn" type="submit">Submit</button>
+
+        </form>
+
+
+        
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Copyright &copy;2023 All rights reserved
+    </footer>
+    <script>
+
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
